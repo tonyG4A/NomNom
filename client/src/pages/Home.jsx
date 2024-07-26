@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import RestaurantList from '../components/RestaurantList';
-import { searchRestaurants } from '../utils/api'; // Assuming you have an api.js file with utility functions
-
+import { searchRestaurants } from '../utils/api';
 const Home = () => {
   const [searchResults, setSearchResults] = useState([]);
 
