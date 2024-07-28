@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 function Nav() {
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+</style>
 
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -36,7 +39,8 @@ function Nav() {
 
   const navListStyle = {
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
+    textDecoration: "none",
   };
 
   const navItemStyle = {
@@ -44,8 +48,9 @@ function Nav() {
   };
 
   const linkStyle = {
-    textDecoration: "none",
-    color: "black",
+    fontFamily: "Wittgenstein",
+    color: "orange",
+    fontSize: "20px",
   };
 
   return (
@@ -59,8 +64,8 @@ function Nav() {
 
 const headerStyle = {
   display: "flex",
-  flexDirection: "row",
   padding: "0 10px",
+  backgroundColor: "black",
 };
 
 export default Nav;

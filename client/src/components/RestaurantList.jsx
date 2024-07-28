@@ -3,7 +3,7 @@ import React from 'react';
 const RestaurantList = ({ restaurants }) => {
   return (
     <div>
-      <h2>Restaurants</h2>
+      <h2>Matches</h2>
       <ul>
         {restaurants.map((restaurant) => (
           <li key={restaurant.id}>

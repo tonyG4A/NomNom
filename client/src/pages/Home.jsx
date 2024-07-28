@@ -16,8 +16,8 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <h1>Restaurant Finder</h1>
+    <div class='searchbar'>
+      <h1 id='search'>Find New Apetites</h1>
       <SearchBar onSearch={handleSearch} />
       {/* Display search results */}
       <RestaurantList restaurants={searchResults} />
